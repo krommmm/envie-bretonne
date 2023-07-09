@@ -25,39 +25,34 @@ const Header = () => {
             {image: crepe4, titre : "Cocktails Blinis"},
             {image: crepe5, titre : "Repas pour toutes occasions"},
         ];
+        
 
         
         const bannerGoDown = async () => {
             banner.style.transform = 'translateY(0px)';
             banner.style.opacity = '0.7';
-            await wait2Seconds();
+            await wait(2000);
         };
         const bannerGoUp = async () => {
             banner.style.transform = 'translateY(-305px)';
             banner.style.opacity = '0';
-            await wait1Seconds();
+            await wait(2000);
         };
         
-        const wait2Seconds = async () => {
-            await new Promise((resolve) => setTimeout(resolve, 4000));
-        };
-        
-        const wait1Seconds = async () => {
-            await new Promise((resolve) => setTimeout(resolve, 2000));
-        };
+        const wait = (duration) => new Promise(resolve => setTimeout(resolve, duration));
         
         const diapoGogo = async () => {
             banner.style.transform = 'translateY(-305px)';
-            await wait1Seconds();
+            await wait(1000);
             for (let i = 0; i < crepesObject.length; i++) {
                 diapo.style.opacity = '1';
                 diapo.setAttribute('src', `${crepesObject[i].image}`);
                 document.querySelector(".banner_container .titre").textContent = `${crepesObject[i].titre}`;
-                await wait1Seconds();
+                await wait(1000);
                 await bannerGoDown();
                 await bannerGoUp();
                 diapo.style.opacity = '0';
-                await wait1Seconds();
+                await wait(2001);
             }
         };
         
