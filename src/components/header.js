@@ -6,8 +6,7 @@ import crepe3 from "../assets/crepe3.png";
 import crepe4 from "../assets/crepe4.png";
 import crepe5 from "../assets/crepe5.png";
 import triksel from "../assets/triskel.png";
-import triskel2 from '../assets/Sans_titre-removebg-preview.png';
-import {useEffect,useRef} from "react";
+import {useEffect} from "react";
 
 
 
