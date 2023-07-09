@@ -126,7 +126,7 @@ header .blue {
 	height: 100%;
 	margin: 0px;
 	padding: 0px;
-	color: white;
+	color: white; 
 	text-align: center;
 }
 .banner_container p {
@@ -142,7 +142,7 @@ header .blue {
 	overflow: hidden;
 }
 .diapo_img {
-	transition: 2s;
+	transition: 1s;
 	opacity: 0;
 	width: 100%;
 }
