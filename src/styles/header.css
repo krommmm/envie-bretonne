@@ -148,6 +148,7 @@ header .blue {
 }
 .diapo_img.hide{
 	opacity:0;
+	transition:0s;
 }
 .banner_container p {
 	color: white;
