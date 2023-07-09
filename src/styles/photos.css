@@ -1,0 +1,29 @@
+.Photos {
+	border: 2px solid #a38b67;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	padding: 15px;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	color: #333333;
+}
+.Photos h2 {
+	margin-top: 20px;
+	font-weight: 700;
+	font-size: 20px;
+}
+.Photos p {
+	line-height: 25px;
+	font-weight: 300;
+}
+
+/* Debut version tablette  */
+@media screen and (max-width: 991px) {
+	body .Photos {
+		width: 90vw;
+		min-width: 90vw;
+	}
+}
+/* Fin version tablette  */

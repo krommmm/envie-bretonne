@@ -1,0 +1,67 @@
+.Cocktails{
+    border: 2px solid #a38b67;
+    border-radius: 5px;
+    display: flex;
+	flex-direction: column;
+	padding: 15px;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	color: #333333;
+}
+.Cocktails h2{
+    margin-top: 20px;
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.Cocktails .miniTitle {
+	font-weight: 600;
+	color: #333;
+}
+.Cocktails p {
+	line-height: 25px;
+	font-weight: 300;
+}
+.Cocktails .bigger {
+	font-size: 18px;
+	font-weight: 200;
+	line-height: 27px;
+}
+.Cocktails .cocktail1{
+    float:right;
+}
+.Cocktails .cocktail2{
+    float:left;
+}
+.Cocktails .cocktail3{
+    float:right;
+}
+
+/* Debut version tablette  */
+@media screen and (max-width: 991px) {
+	body .Cocktails {
+		width: 90vw;
+		min-width: 90vw;
+		
+	}
+
+}
+/* Fin version tablette  */
+
+/* Debut version portable  */
+@media screen and (max-width: 480px) {
+	.Cocktails .cocktail1 {
+		float: none;
+		vertical-align: top;
+	}
+	 .Cocktails .buffet .cocktail2{
+		float: none;
+		vertical-align: top;
+	}
+	 .Cocktails .buffet .cocktail3{
+		float: none;
+		vertical-align: top;
+	}
+}
+/* Fin version portable  */

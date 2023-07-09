@@ -1,0 +1,106 @@
+.Formules {
+	display: flex;
+	flex-direction: column;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	color: #333333;
+}
+.Formules .formules_content {
+	border: 2px solid #a38b67;
+	padding: 15px;
+}
+.Formules li {
+	list-style-type: none;
+}
+.Formules img {
+	width: 200px;
+}
+.Formules .buffet .buffet2 {
+	float: right;
+	margin-right: 20px;
+}
+.Formules .buffet .buffet1 {
+	float: left;
+}
+.Formules .buffet .buffet3 {
+	float: right;
+}
+.Formules .buffet .buffet4 {
+	float: left;
+}
+.Formules .buffet .buffet5 {
+	float: left;
+}
+.Formules .buffet .buffet6 {
+	float: right;
+}
+.Formules .first {
+	margin-bottom: 15px;
+}
+.Formules h2 {
+	margin-top: 20px;
+	font-weight: 700;
+	font-size: 20px;
+}
+.Formules .miniTitle {
+	font-weight: 600;
+	color: #333;
+}
+.Formules p {
+	line-height: 25px;
+	font-weight: 300;
+}
+.Formules .bigger {
+	font-size: 18px;
+	font-weight: 200;
+	line-height: 27px;
+}
+
+.Formules .buffet .buffet_text {
+	display: flex;
+	flex-direction: column;
+}
+
+/* Debut version tablette  */
+@media screen and (max-width: 991px) {
+	body .Formules {
+		width: 90vw;
+		min-width: 90vw;
+		flex-direction: column;
+		margin: auto;
+		align-items: center;
+	}
+	body .Formules .formules_content {
+		width: 100%;
+		padding: 15px;
+	}
+}
+/* Fin version tablette  */
+
+/* Debut version portable  */
+@media screen and (max-width: 481px) {
+	.Formules .formules_content img {
+		width: 200px;
+		height: 150px;
+	}
+	body .Formules .buffet .buffet1 {
+		float: none;
+		vertical-align: top;
+	}
+	body .Formules .buffet .buffet2 {
+		float: none;
+		vertical-align: top;
+	}
+	body .Formules .buffet .buffet3 {
+	
+	}
+	
+	body .Formules .buffet .buffet4 {
+		float: right;
+	}
+	body .Formules .buffet .buffet5 {
+		float: right;
+	}
+}
+/* Fin version portable  */

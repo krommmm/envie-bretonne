@@ -1,0 +1,17 @@
+footer {
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #73624a;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 20px;
+	margin:15px;
+}
+
+footer #triskel_img {
+	width: 50px;
+	margin-right: 20px;
+	object-fit: contain;
+}

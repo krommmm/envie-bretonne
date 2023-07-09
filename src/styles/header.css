@@ -1,0 +1,262 @@
+header .top {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	justify-content: start;
+	margin-top: 50px;
+	width: 100%;
+}
+header .top .big {
+	font-size: 20px;
+}
+header .middle {
+	width: 100%;
+}
+
+header .bottom {
+	margin-top: 5px;
+	margin-bottom: 15px;
+	width: 100%;
+}
+
+header {
+	color: inherit;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 50%;
+	margin: auto;
+	min-width: 940px;
+}
+header a {
+	color: inherit;
+}
+
+.activeLink i {
+	background-color: #eeeeee;
+}
+
+header i {
+	background-color: white;
+	display: flex;
+	padding: 15px;
+	cursor: pointer;
+}
+header .fa-solid,
+header .fa-regular {
+	display: flex;
+
+	align-items: center;
+}
+header a {
+	text-decoration: none;
+}
+header .bottom p {
+	font-size: 23px;
+}
+
+header {
+	font-weight: bold;
+}
+header i:before {
+	margin-right: 15px;
+}
+
+header .bottom {
+	text-transform: capitalize;
+	display: flex;
+}
+
+header i:hover {
+	background-color: #eeeeee;
+	filter: brightness(0.9);
+	padding: 15px;
+}
+
+header .red {
+	color: red;
+}
+
+header i:before {
+	font-size: 25px;
+}
+header p {
+	font-size: 16px;
+	color: #363636;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+header .red {
+	color: #da4f49;
+}
+header .brown {
+	color: #8d7552;
+}
+header .black {
+	color: black;
+}
+header .green {
+	color: #5bb75b;
+}
+header .blue {
+	color: #006dcc;
+}
+
+/* Début diapo + bannière */
+.diapo_container {
+	border: 2px solid #a38b67;
+	border-radius: 5px;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+.diapo {
+	position: relative;
+	width: 100%;
+}
+.banner_container {
+	position: absolute;
+	background-color: rgb(0, 0, 0);
+	opacity: 0.7;
+	width: 20%;
+	top: 0%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	color: white;
+	text-align: center;
+}
+.banner_container p {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.banner_container {
+	transform: translateY(-305px);
+	transition: 1s;
+	opacity: 0;
+}
+.diapo {
+	overflow: hidden;
+}
+.diapo_img {
+	transition: 2s;
+	opacity: 0;
+	width: 100%;
+}
+.banner_container p {
+	color: white;
+}
+.banner_container .triskel {
+	width: 80%;
+}
+/* Fin diapo + bannière */
+
+/* Debut version tablette  */
+@media screen and (max-width: 991px) {
+	body header {
+		width: 100%;
+		min-width: 100%;
+	}
+	body header .top {
+		align-items: center;
+		width: 95vw;
+		margin-bottom: 10px;
+	}
+	body header .middle {
+		width: 95vw;
+		margin: auto;
+	}
+	body header .middle .diapo .banner_container {
+		width: 20vw;
+	}
+	body header .middle .banner_container p {
+		font-size: 13px;
+		margin-top: 10x;
+		margin-bottom: 10px;
+	}
+	.banner_container .triskel {
+		width: 60%;
+	}
+
+	body header .bottom {
+		width: 95vw;
+		min-width: 95%;
+		margin: 10px;
+		font-size: 10px;
+		font-weight: 600;
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	body header .bottom p {
+		font-size: 14px;
+		font-weight: 600;
+	}
+	header .bottom i::before {
+		display: none;
+	}
+}
+
+/* Debut Ancre  */
+.AncreDébutImg {
+	width: 50px;
+	height: 50px;
+	border-radius:50%;
+	/* background-color: rgb(211, 44, 100); */
+	background-image:url("../assets/Sans_titre-removebg-preview.png");
+	background-size: cover;
+	position: fixed;
+	z-index: 99999;
+	right: 5px;
+	top: 85%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	opacity: 0;
+	transition: transform 0.5s ease;
+}
+/* Fin ancre */
+
+/* Fin version tablette  */
+
+/* Debut version portable  */
+@media screen and (max-width: 505px) {
+	body header .middle .diapo .banner_container {
+		width: 30vw;
+	}
+	body header .middle .banner_container p {
+		color: white;
+		font-size: 10px;
+		margin-top: 5px;
+		margin-bottom: 2px;
+	}
+	.banner_container .triskel{
+		width:60%;
+	}
+	header .bottom {
+		/* flex-direction: column; */
+	}
+	body header .bottom i {
+		padding: 5px;
+	}
+	body header .bottom .activeLink {
+		padding: 0px;
+		margin: 0px;
+	}
+	header .bottom i::before {
+		display: flex;
+	}
+	body header .bottom p {
+		font-size: 18px;
+		display: none;
+	}
+
+	body header .bottom i::before {
+		font-size: 25px;
+	}
+}
+/* Fin version tablette  */
