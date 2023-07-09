@@ -26,12 +26,6 @@ const Header = () => {
             {image: crepe5, titre : "Repas pour toutes occasions"},
         ];
 
-        const handleTransitionEnd = () => {
-            diapo.classList.add('hide');
-          };
-        
-          diapo.addEventListener('transitionend', handleTransitionEnd);
-
         
         const bannerGoDown = async () => {
             banner.style.transform = 'translateY(0px)';
@@ -56,7 +50,6 @@ const Header = () => {
             banner.style.transform = 'translateY(-305px)';
             await wait1Seconds();
             for (let i = 0; i < crepesObject.length; i++) {
-                diapo.classList.remove('hide');
                 diapo.style.opacity = '1';
                 diapo.setAttribute('src', `${crepesObject[i].image}`);
                 document.querySelector(".banner_container .titre").textContent = `${crepesObject[i].titre}`;
@@ -64,7 +57,7 @@ const Header = () => {
                 await bannerGoDown();
                 await bannerGoUp();
                 diapo.style.opacity = '0';
-                await wait2Seconds();
+                await wait1Seconds();
             }
         };
         
