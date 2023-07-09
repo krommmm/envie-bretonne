@@ -43,7 +43,7 @@ const Header = () => {
         
         const diapoGogo = async () => {
             banner.style.transform = 'translateY(-305px)';
-            await wait(1000);
+            
             for (let i = 0; i < crepesObject.length; i++) {
               
                 diapo.setAttribute('src', `${crepesObject[i].image}`);
