@@ -45,9 +45,9 @@ const Header = () => {
             banner.style.transform = 'translateY(-305px)';
             await wait(1000);
             for (let i = 0; i < crepesObject.length; i++) {
-                await wait(3000);
-                diapo.style.opacity = '1';
+              
                 diapo.setAttribute('src', `${crepesObject[i].image}`);
+                diapo.style.opacity = '1';
                 document.querySelector(".banner_container .titre").textContent = `${crepesObject[i].titre}`;
                 await wait(1000);
                 await bannerGoDown();
