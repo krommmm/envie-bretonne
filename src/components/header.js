@@ -57,7 +57,6 @@ const Header = () => {
             await wait1Seconds();
             for (let i = 0; i < crepesObject.length; i++) {
                 diapo.classList.remove('hide');
-                await wait1Seconds();
                 diapo.style.opacity = '1';
                 diapo.setAttribute('src', `${crepesObject[i].image}`);
                 document.querySelector(".banner_container .titre").textContent = `${crepesObject[i].titre}`;
