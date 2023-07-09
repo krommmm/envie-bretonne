@@ -47,6 +47,7 @@ const Header = () => {
             for (let i = 0; i < crepesObject.length; i++) {
               
                 diapo.setAttribute('src', `${crepesObject[i].image}`);
+                await wait(1000);
                 diapo.style.opacity = '1';
                 document.querySelector(".banner_container .titre").textContent = `${crepesObject[i].titre}`;
                 await wait(1000);
