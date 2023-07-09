@@ -31,12 +31,12 @@ const Header = () => {
         const bannerGoDown = async () => {
             banner.style.transform = 'translateY(0px)';
             banner.style.opacity = '0.7';
-            await wait(2000);
+            await wait(3000);
         };
         const bannerGoUp = async () => {
             banner.style.transform = 'translateY(-305px)';
             banner.style.opacity = '0';
-            await wait(2000);
+            await wait(1000);
         };
         
         const wait = (duration) => new Promise(resolve => setTimeout(resolve, duration));
