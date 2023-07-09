@@ -52,7 +52,7 @@ const Header = () => {
                 await bannerGoDown();
                 await bannerGoUp();
                 diapo.style.opacity = '0';
-                await wait(2001);
+                await wait(4001);
             }
         };
         
