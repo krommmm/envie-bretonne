@@ -147,7 +147,7 @@ header .blue {
 	width: 100%;
 }
 .diapo_img.hide{
-	display:none;
+	visibility:0;
 }
 .banner_container p {
 	color: white;
