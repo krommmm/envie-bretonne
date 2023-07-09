@@ -140,6 +140,7 @@ header .blue {
 }
 .diapo {
 	overflow: hidden;
+	transition:3s;
 }
 .diapo_img {
 	transition: 2s;
