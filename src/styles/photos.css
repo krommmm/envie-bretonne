@@ -19,6 +19,45 @@
 	font-weight: 300;
 }
 
+.photos_container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.imgCrepe {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+.photo {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	padding: 10px;
+	margin: 10px;
+}
+.legend {
+	position: absolute;
+	top: 60%;
+	left: 10%;
+	color: black;
+	background-color: rgba(255, 255, 255, 0.6);
+	padding: 11px;
+	border-radius: 5px;
+	text-align: center;
+	width: 150px;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.legend p {
+	font-weight: 600;
+	line-height: initial;
+}
+
 /* Debut version tablette  */
 @media screen and (max-width: 991px) {
 	body .Photos {
