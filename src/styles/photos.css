@@ -43,7 +43,12 @@
 	top: 60%;
 	left: 10%;
 	color: black;
-	background-color: rgba(255, 255, 255, 0.6);
+	background-image: linear-gradient(
+		to right,
+		rgba(255, 209, 148, 0.6),
+		rgba(209, 145, 60, 0.6)
+	);
+	border: 1px solid black;
 	padding: 11px;
 	border-radius: 5px;
 	text-align: center;
