@@ -45,32 +45,81 @@ const Accueil = () => {
 			<div className="Accueil">
 				<div className="left">
 					<h2 className="title">
-						Envie-Bretonne, votre crépier-traiteur à domicile
+						<span className="bold">
+							Envie-Bretonne, votre crépier-traiteur à domicile
+						</span>
 					</h2>
 					<p>
-						A l'occasion d'un <span className="bold">mariage</span>,{' '}
-						<span className="bold">retour de noces</span>,{' '}
-						<span className="bold">repas familial</span> ou{' '}
-						<span className="bold">repas d'entreprise</span>,{' '}
-						<span className="bold">départ en retraite</span>,
-						"garden party", anniversaire, congrès, inauguration
-						etc... Nous mettons à votre disposition notre savoir
-						faire afin de satisfaire toutes vos envies gourmandes.
+						{' '}
+						<span className="bold">
+							Organisez un événement inoubliable
+						</span>
+						, qu'il s'agisse d'un
+						<span className="bold"> mariage</span>, d'un
+						<span className="bold"> retour de noces</span>, d'un
+						<span className="bold"> repas familial</span>, d'un
+						<span className="bold"> déjeuner d'entreprise</span>,
+						d'un
+						<span className="bold"> départ en retraite</span>, d'une
+						somptueuse "garden party", d'un
+						<span className="bold"> anniversaire</span>, d'un
+						<span className="bold"> congrès</span> ou d'une
+						<span className="bold"> inauguration</span> ! Chez nous,
+						nous sommes des experts en matière de
+						<span className="bold">
+							{' '}
+							satisfaction de toutes vos envies gourmandes
+						</span>
+						.
+					</p>
+					<br/>
+					<p>
+						<span className="bold">
+							Nous comprenons l'importance de chaque moment
+							spécial
+						</span>
+						, c'est pourquoi nous mettons à votre disposition notre
+						<span className="bold">
+							{' '}
+							savoir-faire inégalé dans l'art culinaire
+						</span>
+						. Grâce à notre
+						<span className="bold">
+							{' '}
+							équipe expérimentée et passionnée
+						</span>
+						, nous vous garantissons une
+						<span className="bold">
+							{' '}
+							expérience culinaire exceptionnelle
+						</span>{' '}
+						qui ravira tous vos convives.
 					</p>
 					<img className="imageCrepe" src={crepier} alt="crepier" />
 					<p>
-						N'hésitez pas à nous contacter via le formulaire de
-						<NavLink to="/Devis" className="blue bold">
-							&nbsp;demande de devis
-						</NavLink>
-						, nous vous répondrons dans les plus brefs délais.
+						<span className="bold">
+							Pour profiter de nos services, rien de plus simple !
+						</span>
+						Il vous suffit de remplir notre
+						<span className="bold">
+							{' '}
+							formulaire de demande de devis
+						</span>{' '}
+						et nous vous répondrons rapidement avec une
+						<span className="bold">
+							{' '}
+							proposition sur mesure, adaptée à vos besoins
+							spécifiques
+						</span>
+						.
 					</p>
 					<div
-						onClick={handleClick}
 						className="btn-inverse btn btn-black"
+						onClick={handleClick}
 					>
 						<i className="fa-solid fa-pencil green" />
-						&nbsp;&nbsp;Voir détails
+						&nbsp;&nbsp;
+						<span className="bold">Voir détails</span>
 					</div>
 
 					<div ref={myElementRef} className="modal">
@@ -79,36 +128,65 @@ const Accueil = () => {
 								&times;
 							</span>
 							<h2>Titre en attente ...</h2>
-							<div class="textContainer">
+							<div className="textContainer">
 								<img
 									className="cocktail_details"
 									src={cocktail}
 									alt="cocktail"
 								/>
 							</div>
-							<div class="bouton_container">
+							<div className="bouton_container">
 								<div
 									className="btn-inverse btn btn-black"
 									onClick={handleClose}
 								>
-									Fermer
+									<span className="bold">Fermer</span>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+
 				<div className="middle">
 					<h2 className="title">
 						Un choix important de Galettes et Crêpes Bretonnes
 					</h2>
 					<p>
-						Pour vos événements et manifestations privés et
-						professionnels nous vous proposons un choix important de
-						crêpes et galettes bretonnes selon la prestation
-						choisie,ce concept original et convivial étonnera vos
-						convives,la crêperie à domicile une solution clé en
-						mains.
+						Découvrez une
+						<span className="bold">
+							{' '}
+							expérience culinaire bretonne unique
+						</span>{' '}
+						pour vos
+						<span className="bold">
+							{' '}
+							événements privés et professionnels
+						</span>{' '}
+						! Nous vous proposons un
+						<span className="bold">
+							{' '}
+							large choix de délicieuses crêpes et galettes
+						</span>
+						, confectionnées avec
+						<span className="bold"> soin et savoir-faire</span>, qui
+						<span className="bold">
+							{' '}
+							étonneront agréablement vos convives
+						</span>
+						. Notre concept
+						<span className="bold">
+							{' '}
+							original et convivial de crêperie à domicile
+						</span>{' '}
+						offre une
+						<span className="bold">
+							{' '}
+							solution clé en main pour assurer le succès de votre
+							événement
+						</span>
+						.
 					</p>
+
 					<h2>Cocktail apéritif breton</h2>
 					<ul>
 						<li>Cocktail dinatoir</li>
@@ -141,7 +219,8 @@ const Accueil = () => {
 				</div>
 				<div className="bottom">
 					<h2 className="title">
-						Nous nous déplaçons de Lorient à Paris
+						Service de déplacement pour vos évènements spéciaux de
+						Lorient à Paris
 					</h2>
 					<img
 						className="carteMini"
@@ -150,10 +229,21 @@ const Accueil = () => {
 					/>
 
 					<p>
-						Pour tout évènement que vous souhaitez fêter avec vos
-						amis, votre famille, vos collègues de travail, nous nous
-						déplaçons sur le lieu de votre choix sur les régions
-						suivantes :
+						<span class="bold">
+							Organisez vos évènements spéciaux
+						</span>{' '}
+						en toute simplicité avec notre{' '}
+						<span class="bold">service de déplacement</span> !
+						Profitez pleinement de chaque moment partagé avec{' '}
+						<span class="bold">
+							vos amis, famille et collègues de travail
+						</span>{' '}
+						dans des <span class="bold">lieux uniques</span>. Pour{' '}
+						<span class="bold">réserver dès aujourd'hui</span>,
+						consultez notre{' '}
+						<span class="bold">mini-carte de la France</span> et
+						choisissez le lieu idéal pour votre{' '}
+						<span class="bold">prochain évènement</span> !
 					</p>
 					<ul>
 						<li className="green">Bretagne </li>
