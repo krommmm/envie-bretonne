@@ -189,7 +189,7 @@ const Accueil = () => {
 
 					<h2>Cocktail apéritif breton</h2>
 					<ul>
-						<li>Cocktail dinatoir</li>
+						<li>Cocktail dinatoire</li>
 						<li>Buffet froid</li>
 						<li>Buffet chaud</li>
 						<li>Repas complet</li>
