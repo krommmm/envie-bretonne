@@ -74,45 +74,19 @@ const Accueil = () => {
 					</p>
 					<br/>
 					<p>
-						<span className="bold">
-							Nous comprenons l'importance de chaque moment
-							spécial
-						</span>
-						, c'est pourquoi nous mettons à votre disposition notre
-						<span className="bold">
-							{' '}
-							savoir-faire inégalé dans l'art culinaire
-						</span>
-						. Grâce à notre
-						<span className="bold">
-							{' '}
-							équipe expérimentée et passionnée
-						</span>
-						, nous vous garantissons une
-						<span className="bold">
-							{' '}
-							expérience culinaire exceptionnelle
-						</span>{' '}
-						qui ravira tous vos convives.
-					</p>
-					<img className="imageCrepe" src={crepier} alt="crepier" />
-					<p>
-						<span className="bold">
-							Pour profiter de nos services, rien de plus simple !
-						</span>
-						Il vous suffit de remplir notre
-						<span className="bold">
-							{' '}
-							formulaire de demande de devis
-						</span>{' '}
-						et nous vous répondrons rapidement avec une
-						<span className="bold">
-							{' '}
-							proposition sur mesure, adaptée à vos besoins
-							spécifiques
-						</span>
-						.
-					</p>
+	<span className="bold"> Nous comprenons l'importance de chaque moment spécial</span>,
+	c'est pourquoi nous mettons à votre disposition notre
+	<span className="bold"> savoir-faire inégalé dans l'art culinaire</span>.
+	Grâce à notre <span className="bold">équipe expérimentée et passionnée</span>,
+	nous vous garantissons une <span className="bold">expérience culinaire exceptionnelle </span>
+	qui ravira tous vos convives.
+</p>
+<img className="imageCrepe" src={crepier} alt="crepier" />
+<p>
+	<span className="bold">Pour profiter de nos services, rien de plus simple !</span>
+	Il vous suffit de remplir notre <span className="bold">formulaire de demande de devis</span>
+	et nous vous répondrons rapidement avec une <span className="bold">proposition sur mesure, adaptée à vos besoins spécifiques</span>.
+</p>
 					<div
 						className="btn-inverse btn btn-black"
 						onClick={handleClick}
@@ -228,23 +202,19 @@ const Accueil = () => {
 						alt="mini-carte de la france"
 					/>
 
-					<p>
-						<span class="bold">
-							Organisez vos évènements spéciaux
-						</span>{' '}
-						en toute simplicité avec notre{' '}
-						<span class="bold">service de déplacement</span> !
-						Profitez pleinement de chaque moment partagé avec{' '}
-						<span class="bold">
-							vos amis, famille et collègues de travail
-						</span>{' '}
-						dans des <span class="bold">lieux uniques</span>. Pour{' '}
-						<span class="bold">réserver dès aujourd'hui</span>,
-						consultez notre{' '}
-						<span class="bold">mini-carte de la France</span> et
-						choisissez le lieu idéal pour votre{' '}
-						<span class="bold">prochain évènement</span> !
-					</p>
+<p>
+	<span className="bold">Organisez</span> vos <span className="bold">évènements spéciaux</span> en toute <span className="bold">simplicité </span>
+	avec notre <span className="bold">service de déplacement exclusif</span>! <span className="bold">Profitez </span>
+	<span className="bold">pleinement</span> de chaque <span className="bold">moment partagé</span> avec <span className="bold">vos amis</span>,
+	<span className="bold">famille</span> et <span className="bold">collègues de travail</span> dans des <span className="bold">lieux uniques</span>
+	et <span className="bold">enchanteurs</span>. Notre <span className="bold">équipe dévouée</span> est là pour vous
+	<span className="bold"> accompagner</span> à chaque <span className="bold">étape de la planification</span>,
+	<span className="bold">garantissant une expérience mémorable</span>. <span className="bold">Réservez dès
+	aujourd'hui</span> pour choisir le <span className="bold">lieu idéal</span> de votre <span className="bold">prochain 
+	évènement</span> en consultant notre <span className="bold">mini-carte de la France</span>,
+	<span className="bold">offrant un large éventail</span> de <span className="bold">destinations exceptionnelles</span>
+	pour faire de votre <span className="bold">célébration un succès inoubliable</span>!
+</p>
 					<ul>
 						<li className="green">Bretagne </li>
 						<li className="brown">Pays de Loire </li>
